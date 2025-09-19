@@ -1,0 +1,28 @@
+.card{
+    background : rgba(46, 1, 46, 0.932);
+    width: 270px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card_img{
+    height: 170px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card a{
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+}
+
+.card p{
+    
+}

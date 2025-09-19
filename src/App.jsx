@@ -6,7 +6,6 @@ import  Contact  from './components/pages/Contact.jsx'
 import  Education  from './components/pages/Education.jsx'
 import  Home  from './components/pages/Home.jsx'
 import  Projects  from './components/pages/Projects.jsx'
-
 function App() {
   return (
     <>
@@ -18,6 +17,7 @@ function App() {
       <Route path = "/projects" element = {<Projects />}/>
       <Route path = "/contact" element = {<Contact />}/>
     </Routes>
+    
     </>
   )
 }
