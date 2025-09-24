@@ -6,7 +6,7 @@ export default function Card({nome,descricao,foto,linkGit}){
         <div className = "card">
         <img className = "card_img"src = {foto}></img>
         <div className='info'>
-        <h3 className = "title">{nome}</h3>
+        <h3 className = "titleCard">{nome}</h3>
         <p className = "description">{descricao}</p>
         <p className = "arrowInfo">➜Um otimo projeto , um otimo projeto , um otimo projeto</p>
          <p className = "arrowInfo">➜Um otimo projeto , um otimo projeto , um otimo projeto</p>

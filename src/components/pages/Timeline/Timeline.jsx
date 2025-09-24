@@ -64,7 +64,11 @@ const timelineData = [
 
 export default function Timeline() {
   return (
+    <div className = "timeline">
+       <h1>Experience</h1>
+      <p>My professional journey in development and research</p>
     <div className="timeline-container">
+     
       <div className="timeline-line"></div>
 
       {timelineData.map((item, index) => (
@@ -74,6 +78,7 @@ export default function Timeline() {
           {...item}
         />
       ))}
+    </div>
     </div>
   );
 }

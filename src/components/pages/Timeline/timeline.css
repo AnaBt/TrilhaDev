@@ -1,11 +1,27 @@
+.timeline{
+    background: linear-gradient(
+  135deg,
+  oklch(0.12 0.05 265.34) 0%,   /* quase o mesmo que você passou, mas um pouco mais escuro */
+  oklch(0.20 0.08 265.34) 50%,  /* tom intermediário */
+  oklch(0.28 0.10 265.34) 100%  /* roxo ainda escuro, mas menos fechado */
+);
+
+   text-align: center;
+   color: white;
+   padding-top: 4rem;
+}
+
+.timeline h1{
+  font-size: 3rem;
+}
 .timeline-container {
   position: relative;
   padding: 50px 0;
-  background: #0a0a1a; /* só pra exemplo */
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .timeline-line {
@@ -26,7 +42,7 @@
   margin: 40px 0;
   background: #0F172B;
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(128, 0, 255, 0.3);
+  transition: all 0.3s ease;
 }
 .upperCard{
     background: #162034;
@@ -72,24 +88,25 @@
     color: white;
  }
 
- .linha{
+ .timeline-card .linha{
     width: 94%;
     justify-self: center;
     height: 1px;
-    background-color: #444;
+    background-color: #44444469;
  }
 
-ul{
+.timeline-card ul{
     gap:5px;
     display: flex;
     flex-direction: column;
     padding-right: 15px;
-    padding-left: 25px
+    padding-left: 25px;
+    z-index: 1;
 }
-li{
+.timeline-card li{
     list-style: none;
 }
-li:last-of-type{
+ .timeline-card li:last-of-type{
     margin-bottom: 55px;
 }
 
@@ -112,15 +129,50 @@ li:last-of-type{
   margin-left: calc(50% + 40px);
 }
 
-/*.timeline-dot {
+.timeline-card.left .timeline-dot , .timeline-card.right .timeline-dot {
   position: absolute;
-  top: 20px;
-  left: 50%;
   transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
-  background: #a855f7;
-  border: 4px solid #111;
-  border-radius: 50%;
-  z-index: 10;
-}*/
+  z-index: 1;
+  height: 5px;
+  background-color: #444444ee;
+}
+
+.timeline-card.right .timeline-dot {
+  top: 50px;
+  left: -20px;
+  width: 45px;
+}
+
+.timeline-card.left .timeline-dot {
+  top: 50px;
+  left: 400px;
+  width: 45px;
+}
+
+.timeline-card:hover {
+  transform: translateY(-8px) scale(1.2); 
+}
+
+@media (max-width : 930px) {
+    .timeline-container {
+  align-content: center;
+}
+
+  .timeline-card.left , .timeline-card.right {
+    text-align: center;   
+    margin: 0 auto;   
+    margin-bottom: 2rem;    
+
+}
+.timeline-card.left .timeline-dot , .timeline-card.right .timeline-dot {
+  display: none;
+}
+}
+
+@media (max-width: 400px) {
+  .timeline-card {
+    width: 100%;        
+    max-width: 360px;   
+    margin: 20px auto; 
+  }
+}

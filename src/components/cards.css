@@ -9,6 +9,7 @@
     font-family:'Inter';
     font-weight:200;
     border : 2px solid oklch(.551 .027 264.364);
+    transition: all 0.3s ease;
 }
 
 .card_img{
@@ -19,9 +20,12 @@
     background-size: cover;    
 }
 
+.card .titleCard {
+    color: white;
+    font-size: 1.5rem;
+}
 
-
-.card .title , .card p{
+.card .titleCard , .card p{
     text-align: left;
     margin-bottom: 0.5rem;
 }
@@ -61,7 +65,7 @@
     color: rgb(255, 255, 255);
 }
 
-.card:hover{
-    transform: scale(1.020);
-    transition: 0.15s ease;
+.card:hover {
+  transform: translateY(-8px) scale(1.02); 
 }
+

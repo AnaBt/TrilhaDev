@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import './Navbar.css';
+import './navbar.css'
 import { Link, NavLink } from 'react-router-dom';
 
 export default function Navbar() {
@@ -32,7 +32,7 @@ export default function Navbar() {
           <NavLink to="/about">About Me</NavLink>
         </li>
         <li onMouseEnter={handleHover}>
-          <NavLink to="/education">Education</NavLink>
+          <NavLink to="/timeline">Education</NavLink>
         </li>
         <li onMouseEnter={handleHover}>
           <NavLink to="/projects">Projects</NavLink>

@@ -11,7 +11,7 @@
     overflow-x: hidden;  
 }
 
-h1 {
+.hero h1 {
     font-size: clamp(2rem, 5vw, 3.5rem);
     margin-bottom: 1.5rem;
 }
@@ -36,7 +36,7 @@ h1 {
 .hero img {
     filter:drop-shadow(10px 8px 10px rgb(106, 10, 170));
 }
-button {
+.hero button {
     background-color: #00000000;
     color: rgb(255, 255, 255);
     width: 9rem;
@@ -54,7 +54,7 @@ button {
     width: 8rem;
 }
 
-button:hover {
+.hero button:hover {
     animation: moveGradient 3s linear infinite;
     background: linear-gradient( 90deg,#3B0979 35%,#B700FF 100%);
 }

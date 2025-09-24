@@ -1,0 +1,38 @@
+.about{
+    background: linear-gradient(
+  135deg,
+  oklch(0.12 0.05 265.34) 0%,   
+  oklch(0.20 0.08 265.34) 50%, 
+  oklch(0.28 0.10 265.34) 100%  );
+  color: white;
+}
+
+.aboutContent{
+
+  height: 100vh;
+  display: flex;
+}
+
+.aboutHeader{
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    padding: 5rem;
+}
+
+.aboutHeader h1 {
+    font-size: 3.5rem;
+}
+.whoiam h2 , .journey h2{
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+.whoiam p {
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.about .aboutleft ,.aboutright {
+    width: 100%;
+    padding: 6rem;
+}

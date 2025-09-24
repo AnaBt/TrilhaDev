@@ -9,6 +9,7 @@ export default function TimelineCard({ side, title, date, location, university, 
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
+      whileHover={{ scale: 1.006, y: -7, boxShadow: "0 12px 24px rgba(0,0,0,0.3)" }}
     >
 
       <div className="timeline-dot"></div>
