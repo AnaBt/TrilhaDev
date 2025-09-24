@@ -1,11 +1,11 @@
-import React from 'react'
-
+import '../education.css'
 export default function Education() {
   return (
-    <div>
-      <p>oiee</p>
-    </div>
-  )
+    <section className = "education_section">
+      <h1>Experience</h1>
+      <p>My professional journey in development and research</p>
+    </section>
+  );
 }
 
 

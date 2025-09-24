@@ -5,7 +5,8 @@ import  AboutMe  from './components/pages/AboutMe.jsx'
 import  Contact  from './components/pages/Contact.jsx'
 import  Education  from './components/pages/Education.jsx'
 import  Home  from './components/pages/Home.jsx'
-import  Projects  from './components/pages/Projects.jsx'
+import  Projects  from './components/pages/Projects/Projects.jsx'
+import Timeline from './components/Timeline.jsx'
 function App() {
   return (
     <>

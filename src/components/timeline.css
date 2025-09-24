@@ -1,0 +1,126 @@
+.timeline-container {
+  position: relative;
+  padding: 50px 0;
+  background: #0a0a1a; /* só pra exemplo */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: #444;
+  transform: translateX(-50%);
+}
+
+.timeline-card {
+  position: relative;
+  width: 380px;
+  height:fit-content;
+  padding-top: 20px;
+  margin: 40px 0;
+  background: #0F172B;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(128, 0, 255, 0.3);
+}
+.upperCard{
+    background: #162034;
+    width: 100%;
+    display: flex;
+    padding-left: 10px;
+    height: 180px;
+}
+ .upperCard .date{
+    border: 0.5px solid rgba(110, 106, 106, 0.527);
+    font-size: 0.8rem;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 2px;
+    color: white;
+    margin-right: 10px;
+ }
+
+ .upperCardLeft p , .upperCardLeft h1{
+    text-align: left;
+    font-size: 1rem;
+ }
+.upperCardLeft{
+    width: 100%;
+    padding-top:15px;
+    padding-left:15px;
+
+}
+.upperCardRight{
+    padding-top:15px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    padding-left:15px;
+ }
+
+ .description_timeline{
+    text-align: left;
+    font-size: 1rem;
+    padding-left: 15px;
+    margin-top: 3rem;
+    color: white;
+ }
+
+ .linha{
+    width: 94%;
+    justify-self: center;
+    height: 1px;
+    background-color: #444;
+ }
+
+ul{
+    gap:5px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+    padding-left: 25px
+}
+li{
+    list-style: none;
+}
+li:last-of-type{
+    margin-bottom: 55px;
+}
+
+.AchiementText{
+    margin-top: 1.5rem;
+    margin-left: 15px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 5px;
+}
+.timeline-card.left {
+  align-self: flex-end;
+  margin-right: calc(50% + 40px);
+}
+
+.timeline-card.right {
+  align-self: flex-start;
+  margin-left: calc(50% + 40px);
+}
+
+/*.timeline-dot {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: #a855f7;
+  border: 4px solid #111;
+  border-radius: 50%;
+  z-index: 10;
+}*/
