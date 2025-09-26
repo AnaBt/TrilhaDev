@@ -1,18 +1,13 @@
 .about{
-    background: linear-gradient(
-  135deg,
-  oklch(0.12 0.05 265.34) 0%,   
-  oklch(0.20 0.08 265.34) 50%, 
-  oklch(0.28 0.10 265.34) 100%  );
   color: white;
   height: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .aboutContent{
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -20,29 +15,45 @@
     width: 100%;
     height: 40%;
     text-align: center;
-    padding: 5rem;
+    padding: 4rem;
+}
+
+.roxo{
+    color: #895bc0;
+}
+
+.roxo2{
+     color: #6620bd;
 }
 
 .aboutHeader h1 {
-    font-size: 3.5rem;
+    font-size: 2rem;
+}
+.aboutHeader p {
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
 }
 .whoiam h2 , .journey h2 , .skills h2{
-    font-size: 2.3rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
+    color: #895bc0;
 }
 .whoiam p {
     text-align: left;
-    font-size: 1.3rem;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
 }
 
-.about .aboutleft ,.aboutright {
+.about .aboutleft {
     width: 50%;
-    padding: 6rem;
+   padding-left: 8rem;
+   padding-right: 4rem;
 }
 
 .aboutright{
+    width: 50%;
     display: flex;
     flex-direction: column;
+    padding-right: 8rem;
+
 }
 
 .jouney{
@@ -56,20 +67,58 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
+    padding: 0;
     margin-top: 1rem;
     width: 100%;
+    margin-bottom: 2rem;
+    
 }
-
+.skills{
+    width: 100%;
+}
 .skills li{
     list-style: none;
-    border: 1px solid gray;
-    background-color: rgb(59, 55, 55);
-    padding : 0.25rem 0.5rem 0.25rem 0.5rem;
+    background-color:#1D293D;
+    padding : 0.5rem 0.75rem 0.5rem 0.75rem;
     border-radius: 15px;
     margin-right: 0.5rem ;
-}
+    margin-bottom: 0.5rem ;
+    box-shadow: 0 2px 4.5px #895bc0;
+    font-weight: 500;
+    transition: 0.3s all ease;
 
+}
+.skills li:hover{
+    box-shadow: 0 3px 5px #8f51db;
+    color:#895bc0;
+    cursor: default;
+    font-weight: bold;
+    transform: translateY(-2px) scale(1.01); 
+}
 .skills h3{
     text-align: left;
+    font-size: 1.4rem;
     color: white;
+}
+
+@media (max-width : 1000px) {
+.about .aboutleft , .aboutright{
+    width: 100%;
+    padding: 0;
+    margin: 20px;
+}
+.aboutContent .aboutleft {
+    justify-content: center;
+    text-align: center;
+}
+
+.journey , .skills , .skills .languages{
+    justify-content: center;
+    justify-items: center;
+}
+
+ .aboutright ul{
+    justify-content: center;
+ }
+
 }

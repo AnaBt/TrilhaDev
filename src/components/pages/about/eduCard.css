@@ -1,18 +1,26 @@
 .educard{
     background-color: #0F172B;
     width: fit-content;
-    height: 200px;
+    width: 100%;
+    height: 250px;
     display: flex;
     color: white;
     text-align: left;
-    border : 2px solid gray;
+    border : 1px solid #272E40;
     margin-bottom: 1rem;
     border-radius: 15px;
     overflow: hidden;
-    word-wrap: break-word;   /* quebra palavra longa */
     overflow-wrap: break-word;
-}
+    box-shadow: 0 4px 6px #6014be77,
+            0 0 20px #885bc080;
+    transition: all 0.3s ease;
 
+}
+.educard:hover{
+    box-shadow: 0 4px 6px #6014be,
+            0 0 20px #885bc0;
+  transform: translateY(-2px) scale(1.01); 
+}
 
 .educard .left , .educard .right{
     width: 100%;
@@ -21,20 +29,21 @@
 .educard .left{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 0rem;
-    padding: 1rem;
+    padding: 2rem;
 
 }
 
 .educard .right {
     display: flex;
     justify-content: flex-end;
-    padding: 1rem;
+    padding: 2rem;
+    background-color: #0F172B;
 }
 
 .educard .nome{
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
     font-weight: bold;
     text-align: left;
@@ -42,16 +51,25 @@
 }
 
 .educard .uni{
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
     text-align: left;
-    margin-bottom: rem;
+    margin-top: 0px;
 }
 
 .educard .data{
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     text-align: left;
+    word-wrap:normal;
+    overflow-wrap:normal;
 }
 
 .educard .lugar{
-    font-size:0.8rem;
+    font-size:1.3rem;
+}
+
+@media (max-width : 434px) {
+    .educard .right{
+        display: none;
+    }
 }

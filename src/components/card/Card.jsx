@@ -1,5 +1,5 @@
 import './cards.css'
-import git_logo from '../assets/logo.png'
+import git_logo from '../../assets/logo.png'
 
 export default function Card({nome,descricao,foto,linkGit}){
     return(

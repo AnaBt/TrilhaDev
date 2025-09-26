@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import "./timeline.css";
+import "./experience.css";
 
 export default function TimelineCard({ side, title, date, location, university, description, achievements }) {
   return (

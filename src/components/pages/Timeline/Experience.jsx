@@ -1,5 +1,5 @@
-import TimelineCard from "./TimelineCard";
-import "./timeline.css";
+import TimelineCard from "./ExperienceCard";
+import "./experience.css";
 
 const timelineData = [
   {
@@ -65,8 +65,8 @@ const timelineData = [
 export default function Timeline() {
   return (
     <div className = "timeline">
-       <h1>Experience</h1>
-      <p>My professional journey in development and research</p>
+<h1 className='title'><span className='roxo'>&lt;</span> Experience<span className='roxo2'>/</span><span className='roxo'>&gt;</span></h1>    
+  <p>My professional journey in development and research</p>
     <div className="timeline-container">
      
       <div className="timeline-line"></div>

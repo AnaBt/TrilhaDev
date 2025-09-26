@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <Link to="/home" className='title'>AJ</Link>
+      <Link to="/home" className='title'>&lt;AB /&gt;</Link>
 
       <div className='menu' onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
@@ -24,15 +24,13 @@ export default function Navbar() {
         <span></span>
       </div>
 
+      
       <ul className={menuOpen ? "open" : undefined} ref={ulRef}>
         <li onMouseEnter={handleHover}>
           <NavLink to="/home">Home</NavLink>
         </li>
         <li onMouseEnter={handleHover}>
-          <NavLink to="/about">About Me</NavLink>
-        </li>
-        <li onMouseEnter={handleHover}>
-          <NavLink to="/timeline">Education</NavLink>
+          <NavLink to="/timeline">Experience</NavLink>
         </li>
         <li onMouseEnter={handleHover}>
           <NavLink to="/projects">Projects</NavLink>
@@ -42,7 +40,7 @@ export default function Navbar() {
         </li>
         <span className="seletor" style={selectorStyle}></span>
       </ul>
-      <button>Contact</button>
+      <button><NavLink className = "contact" to="/contact">Contact</NavLink></button>
     </nav>
   );
 }

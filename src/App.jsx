@@ -5,20 +5,21 @@ import  AboutMe  from './components/pages/about/AboutMe.jsx'
 import  Contact  from './components/pages/contact/Contact.jsx'
 import  Home  from './components/pages/home/Home.jsx'
 import  Projects  from './components/pages/Projects/Projects.jsx'
-import Timeline from './components/pages/Timeline/Timeline.jsx'
+import Experience from './components/pages/Timeline/Experience.jsx'
+import Footer from './components/footer/footer.jsx'
 function App() {
   return (
-    <>
+    <div className='appContainer'>
     <Navbar />
     <Routes>
+      <Route path="/" element={<Home />} />
       <Route path = "/home" element = {<Home />}/>
-      <Route path = "/about" element = {<AboutMe />}/>
-      <Route path = "/timeline" element = {<Timeline />}/>
+      <Route path = "/timeline" element = {<Experience />}/>
       <Route path = "/projects" element = {<Projects />}/>
       <Route path = "/contact" element = {<Contact />}/>
     </Routes>
-    
-    </>
+    <Footer />
+    </div>
   )
 }
 

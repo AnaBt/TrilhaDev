@@ -1,5 +1,4 @@
 .hero {
-    background-color: #0D0D0D;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -7,16 +6,18 @@
     gap: 2rem;
     flex-wrap: wrap;
     color: white;
-    max-width: 100%;
     overflow-x: hidden;  
 }
+
+
 
 .hero h1 {
     font-size: clamp(2rem, 5vw, 3.5rem);
     margin-bottom: 1.5rem;
+    color: #6114be;
 }
 .primeira-palavra{
-    color: #3B0979;
+    color: #895bc0;
 
 }
 .hero_text p{
@@ -34,8 +35,9 @@
   margin-top: 1.5rem;
 }
 .hero img {
-    filter:drop-shadow(10px 8px 10px rgb(106, 10, 170));
+    filter:drop-shadow(10px 8px 10px rgba(145, 85, 185, 0.747));
 }
+
 .hero button {
     background-color: #00000000;
     color: rgb(255, 255, 255);
@@ -45,30 +47,16 @@
     margin: 0 0.15rem;
     border-radius: 0.5rem;
     cursor: pointer;
-    transition: all 0.5s ease;
     font-size: 1rem;
+}
+
+.CVbutton:hover{
+     background: linear-gradient( 90deg,#590cb66e 50%,#c246f365 100%);
 }
 
 .HireMeButton{
     background: linear-gradient( 90deg,#3B0979 35%,#B700FF 100%);
     width: 8rem;
-}
-
-.hero button:hover {
-    animation: moveGradient 3s linear infinite;
-    background: linear-gradient( 90deg,#3B0979 35%,#B700FF 100%);
-}
-
-@keyframes moveGradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 @media (max-width : 1035px) {

@@ -1,12 +1,13 @@
 import React from 'react'
 import './about.css'
 import Educard from './educard'
+
 export default function AboutMe() {
   return (
   <div className='about'>
   <div className = "aboutHeader">
-    <h1>About Me</h1>
-    <p>description</p>
+    <h1><span className='roxo'>&lt;</span> About Me<span className='roxo2'>/</span><span className='roxo'>&gt;</span></h1>
+    <p>Get to know more about my background and skills</p>
   </div>
 
     <div className = "aboutContent">
@@ -27,11 +28,11 @@ export default function AboutMe() {
        data = "January 2025 - May 2027"
        lugar = "Florianopolis - Brasil" />
   
-      <Educard
-       nome = "Bachelor of Science in Computer Science"
-       uni = "UFSC" 
-       data = "January 2025 - May 2027"
-       lugar = "Florianopolis - Brasil" />
+       <Educard
+       nome = "Master in Science"
+       uni = "Yale" 
+       data = "January 2028 - May 2021"
+       lugar = "California - EUA" />
     </div>
     </div>
 
@@ -40,21 +41,40 @@ export default function AboutMe() {
       
       <section className = "skills">
         <h2>Skills</h2>
+        <div className = "languages">
         <h3>Languages</h3>
         <ul>
               {[
-           "java" , "python" , "c++" , "R" , "Go" , "TypeCript" , 
-           "java" , "python" , "c++" , "R" , "Go" , "TypeCript" , 
-           "java" , "python"
+           "Java", "Python", "C", "C++", "C#", 
+            "Go", "Rust", "Kotlin", "Swift", "TypeScript", 
+            "JavaScript", "PHP", "Ruby", "Perl", "R", 
+            "Scala", "Haskell", "Elixir", "Dart", "Lua", 
+            "Objective-C", "MATLAB", "Julia", "Fortran", "Assembly"
+
         ].map((item) => (
                 <li className = "itemSkill">{item}</li>
               ))}
               </ul>
+              </div>
+              <div className = "languages">
+        <h3>Frameworks/libraries</h3>
+        <ul>
+              {[
+           "React", "Angular", "Vue", "Svelte", "Next.js", 
+"Nuxt.js", "Express", "Django", "Flask", "Spring", 
+"Laravel", "Ruby on Rails", "ASP.NET", "FastAPI", "NestJS", 
+        ].map((item) => (
+                <li className = "itemSkill">{item}</li>
+              ))}
+              </ul>
+              </div>
+             
       </section>
     </div>
     
     </div>
     </div>
+    
   )
 }
 

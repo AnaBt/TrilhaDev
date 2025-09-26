@@ -1,6 +1,6 @@
 .card{
     background :#0F172B;
-    width: 480px;
+    width: 400px;
     height: fit-content;
     margin: 10px;
     border-radius: 15px;
@@ -67,5 +67,7 @@
 
 .card:hover {
   transform: translateY(-8px) scale(1.02); 
+  box-shadow: 0 4px 6px #6014be,
+            0 0 20px #885bc0;
 }
 
