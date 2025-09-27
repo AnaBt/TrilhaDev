@@ -14,7 +14,7 @@ export default function Contact() {
       </div>
 
       <div className = "formConectHolder">
-      <form action="https://formsubmit.co/your@email.com" method="POST">
+      <form action="https://formsubmit.co/6d0415a84e58d390f6306ca20d5efd95" method="POST">
         <div className = "formCabecalho">
           <h3>Send me a message</h3>
           <p>Fill out the form below and I'll get back to you as soon as possible.</p>
