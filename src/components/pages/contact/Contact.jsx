@@ -74,6 +74,7 @@ export default function Contact() {
               type="text"
               placeholder="I want a project!"
               name="subject"
+              
             ></input>
           </div>
           <div className="inputForm">
