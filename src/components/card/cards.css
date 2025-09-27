@@ -1,73 +1,74 @@
-.card{
-    background :#0F172B;
-    width: 400px;
-    height: fit-content;
-    margin: 10px;
-    border-radius: 15px;
-    text-align: center;
-    z-index : 2;
-    font-family:'Inter';
-    font-weight:200;
-    border : 2px solid oklch(.551 .027 264.364);
-    transition: all 0.3s ease;
+.card {
+  background: #0f172b;
+  width: 400px;
+  height: fit-content;
+  margin: 10px;
+  border-radius: 15px;
+  text-align: center;
+  z-index: 2;
+  font-family: "Inter";
+  font-weight: 200;
+  border: 2px solid oklch(0.551 0.027 264.364);
+  transition: all 0.3s ease;
 }
-
-.card_img{
-    height: 230px;
-    width: 100%;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    background-size: cover;    
+#card{
+  padding: 0rem;
+}
+.card_img {
+  height: 230px;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  background-size: cover;
 }
 
 .card .titleCard {
-    color: white;
-    font-size: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
 }
 
-.card .titleCard , .card p{
-    text-align: left;
-    margin-bottom: 0.5rem;
+.card .titleCard,
+.card p {
+  text-align: left;
+  margin-bottom: 0.5rem;
 }
 
 .card p {
-    color : oklch(.704 .04 256.788);
-    margin-bottom: 1rem;
+  color: oklch(0.704 0.04 256.788);
+  margin-bottom: 1rem;
 }
-.card a{
-    color: white;
-    display: block;
-    text-align: center;
+.card a {
+  color: white;
+  display: block;
+  text-align: center;
 }
 
-.info{
-    padding:1rem;
+.info {
+  padding: 1rem;
 }
-.cardFooter{
-    margin-top: 3rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.cardFooter {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card button {
-    background: linear-gradient( 45deg,#450099 50%,#b700ff 100%);
-    color: rgb(255, 255, 255);
-    width: 8rem;
-    height: 2rem;
-    padding: 0.1rem;
-    border-radius: 5px;
-    cursor: pointer;
+  background: linear-gradient(45deg, #450099 50%, #b700ff 100%);
+  color: rgb(255, 255, 255);
+  width: 8rem;
+  height: 2rem;
+  padding: 0.1rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .card button:hover {
-    background: linear-gradient( 45deg,#6f00ff 50%,#b700ff 100%);
-    color: rgb(255, 255, 255);
+  background: linear-gradient(45deg, #6f00ff 50%, #b700ff 100%);
+  color: rgb(255, 255, 255);
 }
 
 .card:hover {
-  transform: translateY(-8px) scale(1.02); 
-  box-shadow: 0 4px 6px #6014be,
-            0 0 20px #885bc0;
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 4px 6px #6014be, 0 0 20px #885bc0;
 }
-

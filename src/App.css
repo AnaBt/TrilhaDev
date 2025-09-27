@@ -1,9 +1,9 @@
-.App{
+.App {
   background-color: #fefefe;
   height: 100%;
   width: 100%;
 }
-.appContainer{
+.appContainer {
   min-height: 50vh;
   display: flex;
   flex-direction: column;
@@ -20,15 +20,26 @@
   }
 }
 
- .hero , .timeline .title , .timeline p , .projects_section h1 , .projects_section .ProjectHeaderDescription , .contactSection h1 , .contactSection .contactHeader p{
+.hero,
+.timeline .title,
+.timeline p,
+.projects_section h1,
+.projects_section .ProjectHeaderDescription,
+.contactSection h1,
+.contactSection .contactHeader p {
   animation: fadeUp 1s ease-out forwards;
 }
 
 /*Mudar background geral*/
-.projects_section,.timeline,.homePage,.contactSection, .about{
-    background: linear-gradient(
-  135deg,
-  oklch(0.12 0.05 265.34) 0%,   
-  oklch(0.20 0.08 265.34) 50%, 
-  oklch(0.28 0.10 265.34) 100%  );
+.projects_section,
+.timeline,
+.homePage,
+.contactSection,
+.about {
+  background: linear-gradient(
+    135deg,
+    oklch(0.12 0.05 265.34) 0%,
+    oklch(0.2 0.08 265.34) 50%,
+    oklch(0.28 0.1 265.34) 100%
+  );
 }

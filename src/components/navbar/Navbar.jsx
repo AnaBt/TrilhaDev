@@ -1,13 +1,12 @@
-import { useState, useRef } from 'react';
-import './navbar.css'
-import { Link, NavLink } from 'react-router-dom';
+import { useState, useRef } from "react";
+import "./navbar.css";
+import { Link, NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [selectorStyle, setSelectorStyle] = useState({});
   const [menuOpen, setMenuOpen] = useState(false);
   const ulRef = useRef(null);
-  
 
   const handleHover = (e) => {
     const li = e.currentTarget;
@@ -18,31 +17,40 @@ export default function Navbar() {
 
   return (
     <nav>
-      <Link to="/home" className='title'>&lt;AB /&gt;</Link>
+      <Link to="/home" className="title">
+        &lt;AB /&gt;
+      </Link>
 
-      <div className='menu' onClick={() => setMenuOpen(!menuOpen)}>
+      <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
         <span></span>
         <span></span>
       </div>
 
-      
       <ul className={menuOpen ? "open" : undefined} ref={ulRef}>
         <li onMouseEnter={handleHover}>
-          <NavLink to="/home">Home</NavLink>
+          <NavLink to="/TrilhaDev/home">Home</NavLink>
         </li>
         <li onMouseEnter={handleHover}>
-          <NavLink to="/timeline">Experience</NavLink>
+          <NavLink to="/TrilhaDev/timeline">Experience</NavLink>
         </li>
         <li onMouseEnter={handleHover}>
-          <NavLink to="/projects">Projects</NavLink>
+          <NavLink to="/TrilhaDev/projects">Projects</NavLink>
         </li>
-        <li onMouseEnter={handleHover} className = "contact">
-          <NavLink className = "contact" to="/contact">Contact</NavLink>
+        <li onMouseEnter={handleHover} className="contact">
+          <NavLink className="contact" to="/TrilhaDev/contact">
+            Contact
+          </NavLink>
         </li>
         <span className="seletor" style={selectorStyle}></span>
       </ul>
-      <NavLink className = "contact" to="/contact" id = "contactTextButton"><button>Contact</button></NavLink>
+      <NavLink
+        className="contact"
+        to="/TrilhaDev/contact"
+        id="contactTextButton"
+      >
+        <button>Contact</button>
+      </NavLink>
     </nav>
   );
 }

@@ -1,37 +1,35 @@
-.cardHolder{
-    display: flex;
-    justify-content : center;
-    flex-wrap : wrap;
-    position : relative;
+.cardHolder {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
 }
 
-.projects_section{
-    background: linear-gradient(
-  135deg,
-  oklch(0.12 0.05 265.34) 0%,   
-  oklch(0.20 0.08 265.34) 50%, 
-  oklch(0.28 0.10 265.34) 100%  
-);
-     padding-top : 3rem;
-     height: 100%;
-     width: 100%;
+.projects_section {
+  background: linear-gradient(
+    135deg,
+    oklch(0.12 0.05 265.34) 0%,
+    oklch(0.2 0.08 265.34) 50%,
+    oklch(0.28 0.1 265.34) 100%
+  );
+  padding-top: 3rem;
+  height: 100%;
+  width: 100%;
 }
 
-
-.title{
-    color: white;
-    font-size: 2.5rem;
-    text-align: center;
-
+.title {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 p {
-    color: oklch(.704 .04 256.788);
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 1rem;
+  color: oklch(0.704 0.04 256.788);
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-.projects_section h1{
-     font-size: 3rem;
+.projects_section h1 {
+  font-size: 3rem;
 }
