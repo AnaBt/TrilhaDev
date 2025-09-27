@@ -15,6 +15,10 @@ export default function Contact() {
 
       <div className = "formConectHolder">
       <form action="https://formsubmit.co/6d0415a84e58d390f6306ca20d5efd95" method="POST">
+  
+      <input type = "text" name = "_honey" style={{ display: "none" }}></input>
+      <input type = "hidden" name = "_captcha"  value = "false"></input>
+      
         <div className = "formCabecalho">
           <h3>Send me a message</h3>
           <p>Fill out the form below and I'll get back to you as soon as possible.</p>
@@ -47,10 +51,10 @@ export default function Contact() {
         <div className = "inputForm">
           <p>Message</p>
           <textarea className = "messageInput"
-           type = "text" placeholder=' I would like to discuss a project opportunity'
+           placeholder=' I would like to discuss a project opportunity'
            name = "message"></textarea>
            </div>
-        < button type="submit">Send Message</button>
+        <button type="submit">Send Message</button>
       </form>
 
       <div className = "connectCard">
