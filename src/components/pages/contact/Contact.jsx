@@ -18,6 +18,7 @@ export default function Contact() {
   
       <input type = "text" name = "_honey" style={{ display: "none" }}></input>
       <input type = "hidden" name = "_captcha"  value = "false"></input>
+      <input type = "hidden" name = "_next" value = "https://anabt.github.io/contact/success.html"/>
       
         <div className = "formCabecalho">
           <h3>Send me a message</h3>
