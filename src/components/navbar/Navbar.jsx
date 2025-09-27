@@ -1,11 +1,13 @@
 import { useState, useRef } from 'react';
 import './navbar.css'
 import { Link, NavLink } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [selectorStyle, setSelectorStyle] = useState({});
   const [menuOpen, setMenuOpen] = useState(false);
   const ulRef = useRef(null);
+  
 
   const handleHover = (e) => {
     const li = e.currentTarget;
@@ -40,7 +42,7 @@ export default function Navbar() {
         </li>
         <span className="seletor" style={selectorStyle}></span>
       </ul>
-      <button><NavLink className = "contact" to="/contact">Contact</NavLink></button>
+      <NavLink className = "contact" to="/contact" id = "contactTextButton"><button>Contact</button></NavLink>
     </nav>
   );
 }
