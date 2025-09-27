@@ -19,10 +19,37 @@ export default function Contact() {
           <h3>Send me a message</h3>
           <p>Fill out the form below and I'll get back to you as soon as possible.</p>
         </div>
-        <div className = "inputForm"><p>Name</p><input className = "nameInput" type = "text" placeholder='John Snow'></input></div>
-        <div className = "inputForm"><p>Email</p><input className = "emailInput" type = "email" placeholder='nome@example.com'></input></div>
-        <div className = "inputForm"><p>Subject</p><input className = "subjectInput" type = "text" placeholder='I want a project!'></input></div>
-        <div className = "inputForm"><p>Message</p><textarea className = "messageInput" type = "text" placeholder=' I would like to discuss a project opportunity'></textarea></div>
+
+        <div className = "inputForm">
+          <p>Name</p>
+          <input 
+          className = "nameInput" 
+          type = "text" 
+          placeholder='John Snow' 
+          name = "name"></input>
+        </div>
+
+        <div className = "inputForm">
+          <p>Email</p>
+          <input className = "emailInput"
+           type = "email"
+           placeholder='nome@example.com'
+           name = "email"></input>
+        </div>
+
+        <div className = "inputForm">
+          <p>Subject</p>
+          <input className = "subjectInput"
+           type = "text"
+           placeholder='I want a project!'
+           name = "subject"></input>
+        </div>
+        <div className = "inputForm">
+          <p>Message</p>
+          <textarea className = "messageInput"
+           type = "text" placeholder=' I would like to discuss a project opportunity'
+           name = "message"></textarea>
+           </div>
         < button type="submit">Send Message</button>
       </form>
 
