@@ -54,8 +54,13 @@
 .HireMeButton {
   background: linear-gradient(90deg, #3b0979 35%, #b700ff 100%);
   width: 8rem;
+  transition: 0.3s all ease;
 }
 
+.HireMeButton:hover{
+  transform: translateY(-2px) scale(1.1);
+   
+}
 @media (max-width: 1035px) {
   .hero-text h1 {
     text-align: center;

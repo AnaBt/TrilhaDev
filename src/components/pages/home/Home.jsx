@@ -5,7 +5,7 @@ import "./home.css";
 export default function Home() {
   return (
     <>
-      <div className="homePage">
+      <header className="homePage">
         <section className="hero">
           <div className="hero-text">
             <h1>
@@ -28,7 +28,7 @@ export default function Home() {
             <img src={anaJulia} alt="Foto de perfil" />
           </div>
         </section>
-      </div>
+      </header>
       <About />
     </>
   );

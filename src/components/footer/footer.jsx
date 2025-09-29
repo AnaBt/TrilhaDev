@@ -21,13 +21,13 @@ export default function Footer() {
           <p>Conect with Me!</p>
           <div className="footerLogos">
             <a href="https://www.instagram.com/ana_bottega_/">
-              <img src={instagram}></img>
+              <img src={instagram} alt = "instagram logo"></img>
             </a>
             <a href="https://www.linkedin.com/in/ana-julia-botega-a85169357/">
-              <img src={linkedin}></img>
+              <img src={linkedin} alt = "lindedin logo"></img>
             </a>
             <a href="https://github.com/AnaBt">
-              <img src={git}></img>
+              <img src={git} alt = "github logo"></img>
             </a>
           </div>
         </div>

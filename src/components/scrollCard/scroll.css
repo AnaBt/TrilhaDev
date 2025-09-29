@@ -13,15 +13,6 @@
 }
 
 
-.scroll-wrapper::-webkit-scrollbar {
-  width: 0px;
-}
-
-.scroll-wrapper::-webkit-scrollbar-thumb {
-  background-color: #555;
-  border-radius: 10px;
-}
-
 
 
 .card2{

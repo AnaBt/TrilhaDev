@@ -47,7 +47,7 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="inputForm">
+          <label className="inputForm">
             <p>Name</p>
             <input
               className="nameInput"
@@ -55,9 +55,9 @@ export default function Contact() {
               placeholder="John Snow"
               name="name"
             ></input>
-          </div>
+          </label>
 
-          <div className="inputForm">
+          <label className="inputForm">
             <p>Email</p>
             <input
               className="emailInput"
@@ -65,9 +65,9 @@ export default function Contact() {
               placeholder="nome@example.com"
               name="email"
             ></input>
-          </div>
+          </label>
 
-          <div className="inputForm">
+          <label className="inputForm">
             <p>Subject</p>
             <input
               className="subjectInput"
@@ -76,15 +76,15 @@ export default function Contact() {
               name="subject"
               
             ></input>
-          </div>
-          <div className="inputForm">
+          </label>
+          <label className="inputForm">
             <p>Message</p>
             <textarea
               className="messageInput"
               placeholder=" I would like to discuss a project opportunity"
               name="message"
             ></textarea>
-          </div>
+          </label>
           <button type="submit">Send Message</button>
         </form>
 
@@ -96,7 +96,7 @@ export default function Contact() {
           <a href="https://www.instagram.com/ana_bottega_/">
             {" "}
             <div className="socialInfo">
-              <img src={instagram}></img>
+              <img src={instagram} alt = "logo instagram"></img>
               <div className="formCabecalho">
                 <h3>Instagram</h3>
                 <p>@ana_bottega</p>
@@ -107,7 +107,7 @@ export default function Contact() {
           <a href="https://www.linkedin.com/in/ana-julia-botega-a85169357/">
             {" "}
             <div className="socialInfo">
-              <img src={linkedin}></img>
+              <img src={linkedin} alt = "logo linkedin"></img>
               <div className="formCabecalho">
                 <h3>Linkedin</h3>
                 <p>Ana Julia Botega</p>
@@ -123,7 +123,7 @@ export default function Contact() {
             }}
           >
             <div className="socialInfo">
-              <img src={email}></img>
+              <img src={email} alt = "logo email"></img>
               <div className="formCabecalho">
                 <h3>Email</h3>
                 <p>maluquicebotega@gmail.com</p>
@@ -133,7 +133,7 @@ export default function Contact() {
 
           <a href="https://www.google.com/maps/place/Florian%C3%B3polis,+State+of+Santa+Catarina/@-27.5712063,-48.7999411,10z/data=!3m1!4b1!4m6!3m5!1s0x9527394eb2c632d7:0x81bc550b6a04c746!8m2!3d-27.5968578!4d-48.5468118!16s%2Fg%2F11bc6xlppd?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D">
             <div className="socialInfo">
-              <img src={local}></img>
+              <img src={local} alt = "pin de mapa"></img>
               <div className="formCabecalho">
                 <h3>Current city</h3>
                 <p>Floripra , BRA</p>

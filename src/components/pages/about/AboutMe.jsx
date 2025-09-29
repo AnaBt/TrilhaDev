@@ -19,6 +19,7 @@ export default function AboutMe() {
         <div className="aboutleft">
           <div className="whoiam">
             <h2>Who I am</h2>
+            <article>
             <p>
               I'm Ana, a Full Stack Developer with a passion for creating
               innovative web applications and exploring blockchain technologies.
@@ -38,6 +39,7 @@ export default function AboutMe() {
               that leverage the power of decentralized systems to create secure
               and transparent applications.
             </p>
+            </article>
           </div>
 
           <div className="journey">

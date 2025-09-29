@@ -59,11 +59,11 @@
 }
 
 .aboutright {
-  flex: 1; /* ocupa o espaço disponível sem fixar 50% */
-  min-width: 0; /* permite que os filhos encolham */
+  flex: 1; 
+  min-width: 0; 
   display: flex;
   flex-direction: column;
-  padding-right: 2rem; /* padding menor para desktop */
+  padding-right: 2rem; 
   box-sizing: border-box;
 }
 
@@ -122,10 +122,10 @@
     margin: 20px;
   }
   .aboutright {
-    width: 100%; /* ocupa toda a largura */
-    padding: 1rem; /* padding proporcional */
-    margin: 0 auto; /* centraliza */
-    min-width: 0; /* garante que não force overflow */
+    width: 100%; 
+    padding: 1rem; 
+    margin: 0 auto; 
+    min-width: 0; 
   }
 
   .aboutContent .aboutleft {
@@ -153,6 +153,6 @@
     width: 100%;
     max-width: 100%;
     min-width: 0;
-    height: auto; /* se quiser deixar altura flexível */
+    height: auto;
   }
 }
